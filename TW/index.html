@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title> Vanzare-Cumparare </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="keywords" content="Zamazorg, produse, vanzare-cumparare">
+    <meta name="description" content="Poti vinde si cumpara articole">
+    <meta name="author" content="Stefan Moldoveanu">
+    <link rel="apple-touch-icon" sizes="180x180" href="./resurse/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resurse/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resurse/ico/favicon-16x16.png">
+    <link rel="manifest" href="./resurse/ico/site.webmanifest">
+    <link rel="mask-icon" href="./resurse/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./resurse/ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./resurse/ico/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <!--Momentan este doar un buton, dar vreau sa il fac un meniu
+            de tipul burger-->
+        <button type="button">Categorii</button>
+
+        <h1 id="top_of_page">Zamazorg</h1>
+
+        <div id="account_access">
+        <!--Intentia e sa am o singura pagina in care pot sa
+            fac ambele lucruri, doar ca numai unul este vizibil 
+            intr-un moment-->
+        <form action="TODO_cont_logare">
+            <input type="submit" value="Logare In Cont">
+        </form>
+        <form action="TODO_account_inregistrare">
+            <input type="submit" value="Inregistrare Cont">
+        </form>
+        </div>
+
+        <br/><br/>
+        <form action="TODO_query">
+            <input type="text" name="search_query" placeholder="Search">
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="main_menu">
+            <nav>
+                <h2>Cuprins</h2>
+                <ul>
+                    <li><div>Acasa</div>
+                        <ul>
+                            <li><a href="#Introducere">Introducere</a></li>
+                            <li><a href="#Anunturi">Anunturi</a></li>
+                            <li><a href="#FAQ">Intrebari frecvente</a></li>
+                        </ul>
+                    </li>
+                    <!--Astea doua vor fi meniuri orizontale; in functie de
+                        deciziile mele s-ar putea schimba-->
+                    <li><a href="#CatPop">Categorii populare</a></li>
+                    <li><a href="#ProdPop">Produse populare</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="Acasa">
+            <section id="Introducere">
+                <h2>Salut</h2>
+                <p>
+                    Bun venit la Zamazorg! Scopul acestui site este de a oferi
+                    utilizatorilor o platforma unde pot organiza achizitii extrem
+                    de simplu, avand la dispozitie un sistem intuitiv de cautare si
+                    filtrare, si un sistem de postare de <b>produse</b> <i>user-friendly</i>.
+                </p>
+                <figure id="Photo">
+                    <picture>
+                    <source media="(min-width:1280px)" srcset="./resurse/images/mega-psycho.jpg">
+                    <source media="(min-width:600px)" srcset="./resurse/images/psycho.jpg">
+                    <img src="./resurse/images/mini-psycho.jpg" alt="text alternativ" style="width:auto;" 
+                        title="Nu am nicio idee ce fel de poza sa pun, probabil nu o sa pun niciuna la final">
+                    </picture>
+                    <figcaption>Looga me</figcaption>
+                </figure>
+            </section>
+            <br/>
+            <section id="Anunturi">
+                <!--Vreau sa fac o lista la care doar eu pot adauga 
+                    elemente noi si care va sterge ultimul entry daca sunt
+                    prea multe-->
+                <h2>Noutati</h2>
+                <ul>
+                    <li>Am creat un <a href="https://amazon.com">site</a> mai bun.</li>
+                    <li>La vanzarea unui produs se impune o taxa de <s>0.2%</s> <ins>0.5%</ins>.</li>
+                    <li>Am adaugat o imagine folosind tagul <i>picture</i>.</li>
+                    <li>Am determinat sectiunile principale ale paginii.</li>
+                    <li>Am creat acest site.</li>
+                </ul>
+            </section>
+            <br/>
+            <section id="FAQ">
+                <h2>Intrebari frecvente</h2>
+                <!--Trebuie sa sterg sagetile, sunt oribile-->
+                <ol>
+                    <li>
+                        <details>
+                            <summary>Cat costa postarea unui produs?</summary>
+                            Postarea in sine este gratuita, dar
+                            vanzarea unui produs va impune o taxa de 0.5%.
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <!--Videoclipurile acestea sunt placeholdere, vreau sa fac
+                                eu tutoriale cand o sa am restul site-ului-->
+                            <summary>Cum fac cont/postez produs/cumpar produs.</summary>
+                            <p>Va ofer videoclipuri explanatorii, dar si un <a href="./resurse/documents/Lista 1.pdf" download target="_blank">document</a> cu imagini.</p>
+                            <div class="taburi_iframe">
+                                <a href="https://www.youtube.com/embed/JqNY3-LGngg" target="ifr-video">Video 1</a>
+                                <a href="https://www.youtube.com/embed/getjnTc8KpE" target="ifr-video">Video 2</a>
+                                <a href="https://www.youtube.com/embed/yU6WC4dpaHM" target="ifr-video">Video 3</a>
+                            </div>
+
+                            <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/JqNY3-LGngg" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Mi-am uitat parola, ajutor?</summary>
+                            Momentan nu am in plan acest <i>feature</i>, dar
+                            daca am timp mai tarziu poate o sa il implementez.
+                        </details>
+                    </li>
+                </ol>
+            </section>
+        </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        
+    </main>
+
+    <footer>
+        <address>
+            Ne puteti conecta la:<br/>
+            <ol>
+                <li>Telefon: <a href="tel:+31123456789">+31123456789</a>;</li>
+                <li>Sediul nostru: <a href="https://goo.gl/maps/NRYGRbuE4nFApWMD9">Facultatea de Matematica si Informatica</a>;</li>
+                <li>Adresa noastra de e-mail: <a href="mailto:ggg@gmail.com">ggg@gmail.com</a>;</li>
+                <li><a href="https://wa.me/40774424921">WhatsApp-ul nostru</a>.</li>
+            </ol>
+        </address>
+
+        <p><small>Copyright &copy; <time datetime="2021-02-26">2021</time>-prezent Moldoveanu Stefan</small></p>
+        <a href="#top_of_page">Intoarce-te la header-ul paginii.</a>
+    </footer>
+</body>
+
+</html>
